@@ -923,10 +923,14 @@ protected func ContextSettings(object pCaller)
     AddMenuItem("$CtxInvLockOff$", Format("SwitchInventoryLockMode(Object(%d))", ObjectNumber(pCaller)), SM06, pCaller, 0, 0, "$CtxInvLockDesc$");
 
   //Zielen priorisieren
-  if(pCaller->BetterAiming())
-    AddMenuItem("$CtxBetterAimingOn$", Format("SwitchBetterAiming(Object(%d))", ObjectNumber(pCaller)), ACRH, pCaller, 0, 0, "$CtxBetterAimingDesc$");
-  else
-    AddMenuItem("$CtxBetterAimingOff$", Format("SwitchBetterAiming(Object(%d))", ObjectNumber(pCaller)), SM06, pCaller, 0, 0, "$CtxBetterAimingDesc$");
+  //(nur für Classic-Spieler)
+  if (!GetPlrCoreJumpAndRunControl(GetController(pCaller)))
+  {
+    if(pCaller->BetterAiming())
+      AddMenuItem("$CtxBetterAimingOn$", Format("SwitchBetterAiming(Object(%d))", ObjectNumber(pCaller)), ACRH, pCaller, 0, 0, "$CtxBetterAimingDesc$");
+    else
+      AddMenuItem("$CtxBetterAimingOff$", Format("SwitchBetterAiming(Object(%d))", ObjectNumber(pCaller)), SM06, pCaller, 0, 0, "$CtxBetterAimingDesc$");
+  }
 
   //Leerzeile
   AddMenuItem("", 0, 0, pCaller, 0, 0, "");

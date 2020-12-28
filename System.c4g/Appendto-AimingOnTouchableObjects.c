@@ -2,54 +2,39 @@
 
 //Erleichtert das Zielen per [Dreifachstopp] vor anfassbaren Objekten, sofern der Spieler es für sich in den Einstellungen aktiviert hat.
 
-#strict 2
+#strict 3
 #appendto *
 
 
 /* Steuerung */
 
-public func ControlDown(object pObj)
+public func ControlDown(object pByObj)
 {
-  if(!(GetOCF() & OCF_Grab) || !pObj)
-    return(_inherited(pObj, ...));
+  if(!(GetOCF() & OCF_Grab) || !pByObj)
+    return(_inherited(pByObj, ...));
 
   //Bei Dreifachstop loslassen und Zielen
-  if(pObj && pObj->~BetterAiming() && GetEffect("IntWasGrabbed", pObj) && Contents(0, pObj))
+  if(pByObj && pByObj->~BetterAiming() && !GetPlrCoreJumpAndRunControl(GetController(pByObj)) && GetEffect("DidGrab", pByObj) && Contents(0, pByObj))
   {
-    pObj->SetAction("Walk");
-    if(pObj->~ReadyToSquatAim())
-      pObj->~StartSquatAiming();
+    pByObj->SetAction("Walk");
+    if(pByObj->~ReadyToSquatAim())
+      pByObj->~StartSquatAiming();
 
-    this->~Grabbed(pObj, false);
     return;
   }
 
-  return(_inherited(pObj, ...));
+  return(_inherited(pByObj, ...));
 }
 
-public func ControlUpdate(object pObj, int comdir, bool dig, bool throw)
+public func Grabbed(object pByObj, bool fGrab)
 {
-  if(!pObj || (comdir != 5) || !(GetOCF() & OCF_Grab))
-    return(_inherited(pObj, comdir, dig, throw, ...));
-
-  //Bei Dreifachstop loslassen und Zielen
-  if(pObj && pObj->~BetterAiming() && GetEffect("IntWasGrabbed", pObj) && Contents(0, pObj))
+  if(pByObj && fGrab && !this()->~NoFastAiming())
   {
-    pObj->SetAction("Walk");
-    if(pObj->~ReadyToSquatAim())
-      pObj->~StartSquatAiming();
-
-    this->~Grabbed(pObj, false);
-    return;
+    var timer = 10;
+    if (GetPlrCoreJumpAndRunControl(GetController(pByObj)))
+      timer = 20; // JnR players need 2 presses because they only pressed once to grab
+    AddEffect("DidGrab", pByObj, 100, timer);
   }
 
-  return(_inherited(pObj, comdir, dig, throw, ...));
-}
-
-public func Grabbed(object pByObject, bool fGrab)
-{
-  if(pByObject && fGrab && !this()->~NoFastAiming())
-    AddEffect("IntWasGrabbed", pByObject, 100, 10);
-
-  return _inherited(pByObject, fGrab, ...);
+  return _inherited(pByObj, fGrab, ...);
 }
