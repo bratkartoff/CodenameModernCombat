@@ -1,0 +1,16 @@
+[DefCore]
+id=H24K
+Version=4,9,10,7
+Name=Big Hatch
+Category=C4D_Structure
+Width=30
+Height=30
+Offset=-15,-25
+Mass=100
+Picture=0,60,64,42
+Vertices=2
+VertexX=-16,+16
+VertexFriction=100,100
+SolidMask=0,30,30,30
+TopFace=0,30,30,30
+Grab=2

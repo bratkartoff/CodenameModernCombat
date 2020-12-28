@@ -1,0 +1,193 @@
+--- Belohnungssystem ---
+
+Dieses System ermöglicht es Spieler und deren Leistung genauer bewerten zu können. Dazu werden Punkte und Ränge vergeben, welche am Ende der Runde ausgewertet und gespeichert werden.
+
+--- Standardpunkteliste ---
+
+Im Gefecht:
+
+Kill				50			IC01	Gefechtspunkte	Kill
+Multikill			10			IC21	Gefechtspunkte	Multikill
+Suicide				-30			IC07	Minuspunkte	Selbstmord
+Teamkill			-80			IC06	Minuspunkte	Teamkill
+
+Assist:
+
+KillAssist			30			IC02	Teampunkte	Kill Assist
+TracerAssist			30			IC22	Teampunkte	Kill Assist durch Peilsender
+DriverAssist			30			IC23	Teampunkte	Kill Assist als Fahrer
+VisualAssist			10			IC24	Teampunkte	Kill Assist durch Sichtung
+BlindingAssist			10			IC19	Teampunkte	Kill Assist durch Blendung
+
+Teamwork:
+
+Reanimation			50			IC04	Teampunkte	Reanimation
+Healing				Heilung/4		IC05	Teampunkte	Heilung
+Supply				Munitionierung/3	IC14	Teampunkte	Munitionierung
+Protection			10			IC16	Teampunkte	Projektil abgefangen
+TracerSet			10			IC17	Teampunkte	Peilsender platziert
+Repair				10			IC29	Teampunkte	Reparatur
+
+Zerstörung:
+
+Defusing			20			IC15	Teampunkte	Entschärfung
+Damage				10			IC18	Gefechtspunkte	Beschädigung
+VehicleDestruction		50			IC27	Gefechtspunkte	Fahrzeug zerstört
+StructureDestruction		50			IC03	Gefechtspunkte	Struktur zerstört
+
+Capture the Flag:
+
+CTFTheft			50			IC08	Teampunkte	Flagge gestohlen
+CTFRecovery			30			IC09	Teampunkte	Flagge geborgen
+
+Besitznahme/Hold the Flag:
+
+OPConquest			50			IC10	Teampunkte	Flaggenposten erobert
+OPConquestAssist		10			IC11	Teampunkte	Hilfe bei Flaggenposteneroberung
+OPNeutralization		10			IC13	Teampunkte	Flaggenposten neutralisiert
+OPDefense			30			IC12	Teampunkte	Flaggenposten verteidigt
+Control				10			IC28	Teampunkte	Team führt
+
+Assault/Base Assault:
+
+ASDestruction			50			IC25	Teampunkte	Zielobjekt zerstört
+ASDestructionAssist		20			IC26	Teampunkte	Hilfe bei Zielobjektzerstörung
+ASPlacement			20			IC30	Teampunkte	Sprengladung platziert
+ASPlacementAssist		10			IC31	Teampunkte	Hilfe bei Sprengladungsplatzierung
+ASDisarming			20			IC32	Teampunkte	Sprengladung entschärft
+ASDisarmingAssist		10			IC20	Teampunkte	Hilfe bei Sprengladungsentschärfung
+
+--- Standardrangliste ---
+
+Spieler erhalten bei der ersten CMC Runde den Rang 0 in ihre Spielerdateien eingetragen. Die erspielten Punkte dienen dabei als Maßstab, umso mehr der Spieler Team- und Gefechtspunkte sammelt, umso höher steigt er im Rang auf.
+
+R00:         0
+R01:       500
+R02:     2.000
+R03:     4.000
+R04:     8.000
+R05:    12.000
+R06:    18.000
+R07:    24.000
+R08:    32.000
+R09:    40.000
+R10:    50.000
+R11:    60.000
+R12:    72.000
+R13:    84.000
+R14:    98.000
+R15:   112.000
+R16:   128.000
+R17:   144.000
+R18:   162.000
+R19:   180.000
+R20:   200.000
+R21:   220.000
+R22:   242.000
+R23:   264.000
+R24:   288.000
+R25:   312.000
+R26:   338.000
+R27:   364.000
+R28:   392.000
+R29:   420.000
+R30:   450.000
+R31:   480.000
+R32:   512.000
+R33:   544.000
+R34:   578.000
+R35:   612.000
+R36:   648.000
+R37:   684.000
+R38:   722.000
+R39:   760.000
+R40:   800.000
+R41:   840.000
+R42:   882.000
+R43:   924.000
+R44:   968.000
+R45: 1.012.000
+R46: 1.058.000
+R47: 1.104.000
+R48: 1.152.000
+R49: 1.200.000
+R50: 1.250.000
+R51: 1.300.000
+R52: 1.352.000
+R53: 1.404.000
+R54: 1.458.000
+R55: 1.512.000
+R56: 1.568.000
+R57: 1.624.000
+R58: 1.682.000
+R59: 1.740.000
+R60: 1.800.000
+R61: 1.860.000
+R62: 1.922.000
+R63: 1.984.000
+R64: 2.048.000
+R65: 2.112.000
+R66: 2.178.000
+R67: 2.244.000
+R68: 2.312.000
+R69: 2.380.000
+R70: 2.450.000
+R71: 2.520.000
+R72: 2.592.000
+R73: 2.664.000
+R74: 2.738.000
+R75: 2.812.000
+R76: 2.888.000
+R77: 2.964.000
+R78: 3.042.000
+R79: 3.120.000
+R80: 3.200.000
+R81: 3.280.000
+R82: 3.362.000
+R83: 3.444.000
+R84: 3.528.000
+R85: 3.612.000
+R86: 3.698.000
+R87: 3.784.000
+R88: 3.872.000
+R89: 3.960.000
+R90: 4.050.000
+R91: 4.140.000
+R92: 4.232.000
+R93: 4.324.000
+R94: 4.418.000
+R95: 4.512.000
+R96: 4.608.000
+R97: 4.704.000
+R98: 4.802.000
+R99: 4.900.000
+R100:5.000.000
+
+--- Standardgeldverteilung ---
+
+Für bestimmte Aktionen gibt es zudem auch Geldboni. Man beachte, das Geldboni auch ohne Belohnungen-Regel vergeben werden.
+
+Gefecht:
+
+Kill					25
+Teamkill				-20
+Tod					10
+
+Besitznahme:
+
+Flaggenposteneroberung			15
+Hilfe bei Flaggenposteneroberung	10
+Flaggenpostenneutralisierung		10
+Hilfe bei Flaggenpostenneutralisierung	5
+Flaggenpostenrückeroberung		5
+
+Capture the Flag:
+
+Flaggendiebstahl			30
+
+Assault/Base Assault:
+
+Zielobjektzerstörung			30
+Hilfe bei Zielobjektzerstörung		25
+Team-Zielobjektzerstörung		-20
+Hilfe bei Team-Zielobjektzerstörung	-15

@@ -1,0 +1,17 @@
+[DefCore]
+id=HA4K
+Version=4,9,10,7
+Name=Hatch
+Category=C4D_Structure
+Width=26
+Height=20
+Offset=-13,-20
+Mass=10
+Picture=0,20,64,64
+Vertices=2
+VertexY=0,0
+VertexX=-10,10
+VertexFriction=100,100
+SolidMask=0,0,20,20,3
+TopFace=0,0,20,20,3
+Grab=2

@@ -1,0 +1,17 @@
+[DefCore]
+id=PLT4
+Version=4,9,10,7
+Name=Flower Pot
+Category=C4D_Vehicle
+Width=6
+Height=6
+Offset=-3,-3
+Vertices=4
+VertexX=-3,-3,3,3
+VertexY=2,-3,2,-3
+VertexFriction=100,80,100,80
+Mass=10
+Picture=0,0,6,6
+Rotate=1
+Float=1
+UprightAttach=8

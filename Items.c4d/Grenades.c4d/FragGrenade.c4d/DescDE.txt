@@ -1,0 +1,1 @@
+Verschleudert bei Explosion scharfkantige Splitter.

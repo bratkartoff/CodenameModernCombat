@@ -1,0 +1,1 @@
+Creates a blinding flash of light upon explosion which can make clonks temporarily blind.

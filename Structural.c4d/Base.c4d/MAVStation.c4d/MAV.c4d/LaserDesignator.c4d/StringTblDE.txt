@@ -1,0 +1,3 @@
+Missiles=LB-Rakete
+Laser=Lasersteuerung
+Reloaded=Rakete abschussbereit!

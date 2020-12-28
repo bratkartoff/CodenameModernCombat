@@ -1,0 +1,3 @@
+Ziel ist das Erobern und Halten eines einzelnen Flaggenpostens, wodurch das Besitzerteam nach und nach Punkte erhält.
+
+Das Team, welches die geforderte Punktzahl als erstes erreicht, gewinnt.

@@ -1,0 +1,86 @@
+#Clonk
+
+CtxStatistics=Statistiken
+CtrlMenuDesc=Menü
+DropItem=Objekt ablegen
+
+#Hazardclonk
+
+CtxGrenadeMenu=Granaten
+AmmoBag=Munitionsgürtel
+CtrlInventoryDesc=Inventar
+NoSpace=Inventar bereits belegt.
+CtxUnbuckleDesc=Ausrüstung ablegen
+CtxUnbuckleItem=%s ablegen
+CtxDetachAttachment=%s abnehmen
+AttachmentCollected=Waffenaufsatz <c ffff33>%s</c> aufgesammelt
+
+#QuickInventory
+
+QuickInventory=QuickInventar
+NextPage=Nächste Seite
+ContentCount=%d Objekt
+ContentsCount=%d Objekte
+PrimaryWeapons=Primärwaffen
+SecondaryWeapons=Sekundärwaffen
+Equipment=Ausrüstung
+Objects=Objekte
+Use=Benutzen
+
+#Einstellungen
+
+Settings=Einstellungen
+CtxGameplay=Gameplay
+CtxScoreDisplay=Punktedarstellung
+CtxConfiguration=Konfiguration
+CtxButtons=Menüpunkte
+CtxQuickInventoryOn=QuickInventar
+CtxQuickInventoryOff=<c 777777>QuickInventar</c>
+CtxQuickInventoryDesc=Aktiviert das QuickInventar-Ringmenü, welches das traditionelle Durchwechseln des Inventars ersetzt.
+CtxHelpMessagesOn=Hilfen
+CtxHelpMessagesOff=<c 777777>Hilfen</c>
+CtxHelpMessagesDesc=Zeigt Hilfsnachrichten über dem Clonk.
+CtxInvLockOn=Inventarsperre
+CtxInvLockOff=<c 777777>Inventarsperre</c>
+CtxInvLockDesc=Verhindert das Ablegen von Waffen per Tastenbefehl und erweitert das Kontextmenü um einen Alternativbefehl zum Ablegen.
+CtxBetterAimingOn=Zielen priorisieren
+CtxBetterAimingOff=<c 777777>Zielen priorisieren</c>
+CtxBetterAimingDesc=Clonks priorisieren bei [Dreifachstopp] das Zielen mit einer Waffe über dem Anfassen eines Objekts.
+CtxScoreDisplayOverhead=Punkteanzeige über Clonk
+CtxScoreDisplayOverheadDesc=Erspielte Punkte in gewerteten Runden werden als Nachrichten über dem Clonk dargestellt.
+CtxScoreDisplayLog=Punkteanzeige als Verlauf
+CtxScoreDisplayLogDesc=Erspielte Punkte in gewerteten Runden werden in einem Verlauf über dem Waffen-HUD dargestellt.
+CtxInfiniteAchievementsOn=Unendliche Errungenschaften
+CtxInfiniteAchievementsOff=<c 777777>Unendliche Errungenschaften</c>
+CtxInfiniteAchievementsDesc=Bereits erspielte Errungenschaften und Ehrenbänder werden bei erneutem Erhalt nochmals eingeblendet.
+CtxDMModules=Schwerverletztenmenü
+CtxDMModulesDesc=Wähle die im Schwerverletztenmenü anzuzeigenden Elemente aus.
+CtxRewardMenuItem=Statistiken
+CtxRewardMenuItemDesc=Menüeintrag für Statistiken ein- oder ausblenden.
+CtxEffectMenuItem=Effektmanager
+CtxEffectMenuItemDesc=Menüeintrag für den Effektmanager ein- oder ausblenden.
+CtxSettingsMenuItem=Einstellungen
+CtxSettingsMenuItemDesc=Menüeintrag für die Einstellungen ein- oder ausblenden.
+CtxSpectateMenuItem=Beobachten
+CtxSpectateMenuItemDesc=Menüeintrag für das Beobachten ein- oder ausblenden.
+CtxKillMsg=Todesnachricht
+CtxKillMsgDesc=Todesnachricht im Schwerverletztenmenü ein- oder ausblenden.
+CtxShortenedNames=Gekürzte Namen
+CtxShortenedNamesDesc=Namen im Schwerverletztenmenü im kurzen Format anzeigen lassen.
+CtxStatisticsDesc=Punkteliste im Schwerverletztenmenü ein- oder ausblenden.
+CtxResetToDefault=Standardeinstellungen
+CtxResetToDefaultDesc=Module des Schwerverletztenmenüs auf Standardeinstellungen zurücksetzen.
+CtxResetData=Daten zurücksetzen
+CtxResetDataDesc=Setze alle oder einzelne gespeicherte Daten zurück.
+ResetDataInfo=Welche Daten sollen zurückgesetzt werden:
+ResetAll=Alle Daten
+ResetSettings=Clonkeinstellungen
+ResetStatistics=Statistiken
+ResetAchievements=Errungenschaften
+ResetAchInfo=Wirklich zurücksetzen?|<c 777777>Das endgültige Zurücksetzen erfolgt nach dem Rundenende.</c>
+ResetAchYes=Zurücksetzen
+ResetDone=Gewählte Daten wurden zurückgesetzt.
+Back=Zurück
+
+#General
+Grenades=Granaten

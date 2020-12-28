@@ -1,0 +1,17 @@
+#DeathMenu
+Suicide=Selbstmord
+SuicideDesc=Gibt dem Clonk den Todesstoß.
+ReanimationBlocked=<c 777777>Reanimation ist erlaubt</c> (%d)
+ReanimationAllow=Reanimation ist erlaubt
+ReanimationDescAllow=Erlaube die Reanimation durch Verbündete.
+ReanimationDisallow=<c 777777>Reanimation ist abgelehnt</c>
+ReanimationDescDisallow=Verweigere die Reanimation durch Verbündete.
+Statistics=Statistik
+EffectLevel=Effektstufe
+Settings=Einstellungen
+Spectate=Beobachten
+DeathCounter=<c ffff33>%d Sekunden</c> bis zum Respawn
+Killer=<c ffff33>Killer</c>
+Points=<c ffff33>Punktestand</c>
+NoShockPaddles=Kein Defibrillator vorhanden!
+AutoRevive=[Springen] zum Reanimieren.

@@ -1,0 +1,22 @@
+// Flaggenposten
+09O;
+
+MsgFlagLost=Flaggenposten <c ffff33>%s</c> an Team <c %x>%s</c> verloren!
+MsgCaptured=Team <c %x>%s</c> kontrolliert Flaggenposten <c ffff33>%s</c>!
+
+// Punkte
+
+TeamReachingGoal=<c ff0000>Achtung</c>: Team %s fehlen nur noch <c ffff33>%d</c> Punkte zum Sieg!
+TeamHasWon={{GHTF}} <c ffff33>Hold the Flag</c> - Rundenende|Team <c %x>%s</c> hat diese Schlacht <c ffff33>gewonnen</c>!
+
+// Hostmenü
+
+Points=Punkte
+MorePoints=Mehr Punkte
+LessPoints=Weniger Punkte
+Finished=Fertig
+
+// Sonstiges
+
+SbrdGoalPoints=Zielpunktzahl
+GoalDesc=Ziel aller Teams ist das Erobern und Halten eines einzelnen Flaggenpostens, der Besitzer erhält dafür|nach und nach Punkte. Das Team, welches die geforderte Punktzahl als erstes erreicht, gewinnt.||{{IC12}} Flaggenposten / {{IC28}} Punktestand / {{SM27}} Zeit bis Punkteerhalt / {{SM26}} Team

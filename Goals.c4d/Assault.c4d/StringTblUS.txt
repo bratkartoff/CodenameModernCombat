@@ -1,0 +1,41 @@
+// Target
+
+TargetArmedAttacker=Bomb has been placed on target <c ffff33>%s</c>, defend it!
+TargetDefusedAttacker=Bomb on target <c ff0000>%s</c> has been defused, we must place a new one!
+TargetArmedDefender=The enemy has placed a bomb on target <c ff0000>%s</c>, defuse it now!
+TargetDefusedDefender=The bomb on target <c ffff33>%s</c> has been defused, good work!
+TargetDestruction=Target <c %x>%s</c> has been destroyed!
+
+// Attackers
+
+DestroyLastStation=Only <c ffff33>one</c> target left to win!
+MsgTicketsLow=<c ff0000>Warning</c>: Our reinforcements are running low, only <c ffff33>%d</c> left!
+MsgNoTickets=<c ff0000>Warning</c>: Our reinforcements are <c ff0000>exhausted</c>!
+TicketLossWarningAttacker=The enemy is <c ff0000>dominating</c> the battle, we need to attack the targets!
+TicketLossAttacker=We <c ff0000>lost</c> some reinforcements! We need to attack the targets right now!
+MsgRegroup=We have <c ffff33>taken</c> the position, get ready to advance!
+MsgForward=The next enemy position has been localised, <c ffff33>advance</c>!
+
+// Defenders
+
+DefendLastStation=<c ff0000>Warning</c>: This is our <c ff0000>last</c> target!
+TicketLossWarningDefender=We are <c ffff33>dominating</c> the battle, continue defending the targets!
+TicketLossDefender=The enemy <c ffff33>lost</c> reinforcements, keep it up!
+MsgFallBack=Our position has been <c ff0000>overrun</c>, fall back!
+MsgDefend=Enemy units are on the move to our location, <c ffff33>stand by</c>!
+
+// Scoreboard
+
+AttackerDominate=The attackers are dominating
+DefenderDominate=The defenders are dominating
+Targets=Targets
+Attackers=Attackers
+
+// End of round
+
+AttackersWon={{GASS}} <c ffff33>Assault</c> - Round End|The <c ffff33>attacker team</c> has <c ffff33>won</c> this battle!
+DefendersWon={{GASS}} <c ffff33>Assault</c> - Round End|The <c ffff33>defender team</c> has <c ffff33>won</c> this battle!
+
+// Misc
+
+GoalDesc=An attacker team battles against a defender team. The attackers need to destroy all targets of the|defenders to win. The goal of the defenders is to stop the attackers and deplete their tickets by|eliminating them. The destruction of the current targets resets the attackers' tickets so that they|can advance. Defenders hold an unlimited amount of tickets. If the defenders protect their targets for|a while, the attackers will slowly loose additional tickets.||{{SM16}} Target / {{SM03}} Ticket / {{IC28}} Domination Status

@@ -1,0 +1,12 @@
+[DefCore]
+id=ROM2
+Version=4,9,10,7
+Name=Room
+Category=C4D_StaticBack
+Width=14
+Height=24
+Offset=-7,-12
+Picture=0,0,14,24
+Entrance=-7,-12,14,24
+Exclusive=1
+ContainBlast=1

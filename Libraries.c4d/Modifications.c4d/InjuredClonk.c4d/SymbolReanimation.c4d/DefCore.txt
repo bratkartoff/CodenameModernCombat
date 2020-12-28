@@ -1,0 +1,11 @@
+[DefCore]
+id=SM01
+Version=4,9,10,7
+Name=Symbol
+Category=C4D_StaticBack|C4D_Foreground
+Width=34
+Height=34
+Offset=-17,-17
+Picture=0,0,34,34
+Timer=3
+TimerCall=Update

@@ -1,0 +1,3 @@
+The goal is to secure and defend a single flag post. The team in control gains points over time.
+
+Whichever team reaches the requested amount of points first wins the round.
